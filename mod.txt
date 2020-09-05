@@ -1,0 +1,337 @@
+{
+    "name": "Ultimate Trainer 4",
+    "description": "Ultimate Trainer 4",
+    "author": "ChildOfSorrow",
+	"contact": "ChildOfSorrow",
+    "version": "4.1.1",
+    "blt_version": 2,
+    "color": "255 0 0",
+	"image" : "logo.png",
+    "keybinds": [
+        {
+            "keybind_id": "UTKeybindMenuMain",
+            "name": "main menu",
+            "description": "open the main menu",
+            "script_path": "keybinds/menus/main.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuJob",
+            "name": "job menu shortcut",
+            "description": "open the job menu",
+            "script_path": "keybinds/menus/job.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuPlayer",
+            "name": "player menu shortcut",
+            "description": "open the player menu",
+            "script_path": "keybinds/menus/player.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuGame",
+            "name": "game menu shortcut",
+            "description": "open the game menu",
+            "script_path": "keybinds/menus/game.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuTime",
+            "name": "time menu shortcut",
+            "description": "open the time menu",
+            "script_path": "keybinds/menus/time.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuSpawn",
+            "name": "spawn menu shortcut",
+            "description": "open the spawn menu",
+            "script_path": "keybinds/menus/spawn.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuDriving",
+            "name": "driving menu shortcut",
+            "description": "open the driving menu",
+            "script_path": "keybinds/menus/driving.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindMenuConstruction",
+            "name": "construction menu shortcut",
+            "description": "open the construction menu",
+            "script_path": "keybinds/menus/construction.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindSpawnPrevious",
+            "name": "spawn previous",
+            "description": "select previous unit",
+            "script_path": "keybinds/spawn/previous.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindSpawnNext",
+            "name": "spawn next",
+            "description": "select next unit",
+            "script_path": "keybinds/spawn/next.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindSpawnPlace",
+            "name": "spawn place",
+            "description": "spawn selected unit",
+            "script_path": "keybinds/spawn/place.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindConstructionCopy",
+            "name": "construction copy",
+            "description": "copy unit on crosshair",
+            "script_path": "keybinds/construction/copy.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindConstructionPaste",
+            "name": "construction paste",
+            "description": "paste copied unit to crosshair",
+            "script_path": "keybinds/construction/paste.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindConstructionRemove",
+            "name": "construction remove",
+            "description": "remove unit on crosshair",
+            "script_path": "keybinds/construction/remove.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindStart",
+            "name": "start",
+            "description": "start the game",
+            "script_path": "keybinds/start.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindRestart",
+            "name": "restart",
+            "description": "restart the game",
+            "script_path": "keybinds/restart.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindFinish",
+            "name": "finish",
+            "description": "finish the game",
+            "script_path": "keybinds/finish.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindLeave",
+            "name": "leave",
+            "description": "leave the game",
+            "script_path": "keybinds/leave.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindTeleportation",
+            "name": "teleportation",
+            "description": "teleport to crosshair",
+            "script_path": "keybinds/teleportation.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindReplenish",
+            "name": "replenish",
+            "description": "replenish health and ammo",
+            "script_path": "keybinds/replenish.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        },
+        {
+            "keybind_id": "UTKeybindDevelopment",
+            "name": "development",
+            "description": "development",
+            "script_path": "keybinds/development.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        }
+    ],
+    "persist_scripts": [
+        {
+            "global": "UTClassUT",
+            "script_path": "classes/UT.lua"
+        },
+        {
+            "global": "UTClassTables",
+            "script_path": "classes/Tables.lua"
+        },
+        {
+            "global": "UTClassConfiguration",
+            "script_path": "classes/Configuration.lua"
+        },
+        {
+            "global": "UTClassUpdater",
+            "script_path": "classes/Updater.lua"
+        },
+        {
+            "global": "UTClassJob",
+            "script_path": "classes/Job.lua"
+        },
+        {
+            "global": "UTClassPlayer",
+            "script_path": "classes/Player.lua"
+        },
+        {
+            "global": "UTClassGame",
+            "script_path": "classes/Game.lua"
+        },
+        {
+            "global": "UTClassTime",
+            "script_path": "classes/Time.lua"
+        },
+        {
+            "global": "UTClassSpawn",
+            "script_path": "classes/Spawn.lua"
+        },
+        {
+            "global": "UTClassDriving",
+            "script_path": "classes/Driving.lua"
+        },
+        {
+            "global": "UTClassConstruction",
+            "script_path": "classes/Construction.lua"
+        },
+        {
+            "global": "UTPersistentDisableAI",
+            "script_path": "persistent/disable-ai.lua"
+        },
+        {
+            "global": "UTPersistentTime",
+            "script_path": "persistent/time.lua"
+        },
+        {
+            "global": "UTPersistentConstruction",
+            "script_path": "persistent/construction.lua"
+        },
+        {
+            "global": "UTPersistentAlert",
+            "script_path": "persistent/alert.lua"
+        },
+        {
+            "global": "UTMenuConfiguration",
+            "script_path": "menus/configuration.lua"
+        },
+        {
+            "global": "UTMenuAbout",
+            "script_path": "menus/about.lua"
+        },
+        {
+            "global": "UTMenuJob",
+            "script_path": "menus/job.lua"
+        },
+        {
+            "global": "UTMenuPlayer",
+            "script_path": "menus/player.lua"
+        },
+        {
+            "global": "UTMenuGame",
+            "script_path": "menus/game.lua"
+        },
+        {
+            "global": "UTMenuTime",
+            "script_path": "menus/time.lua"
+        },
+        {
+            "global": "UTMenuSpawn",
+            "script_path": "menus/spawn.lua"
+        },
+        {
+            "global": "UTMenuDriving",
+            "script_path": "menus/driving.lua"
+        },
+        {
+            "global": "UTMenuConstruction",
+            "script_path": "menus/construction.lua"
+        },
+        {
+            "global": "UTMenuMain",
+            "script_path": "menus/main.lua"
+        }
+    ],
+    "hooks": [
+        {
+            "hook_id" : "lib/states/bootupstate",
+            "script_path" : "hooks/bootupstate.lua"
+        },
+        {
+            "hook_id" : "lib/managers/dialogs/genericdialog",
+            "script_path" : "hooks/genericdialog.lua"
+        },
+        {
+            "hook_id" : "lib/managers/missionmanager",
+            "script_path" : "hooks/missionmanager.lua"
+        },
+        {
+            "hook_id" : "lib/managers/dlcmanager",
+            "script_path" : "hooks/dlcmanager.lua"
+        },
+        {
+            "hook_id" : "lib/setups/gamesetup",
+            "script_path" : "hooks/gamesetup.lua"
+        },
+        {
+            "hook_id" : "lib/states/ingamewaitingforplayers",
+            "script_path" : "hooks/ingamewaitingforplayers.lua"
+        },
+        {
+            "hook_id" : "lib/network/base/networkmanager",
+            "script_path" : "hooks/networkmanager.lua"
+        },
+        {
+            "hook_id" : "lib/managers/skilltreemanager",
+            "script_path" : "hooks/skilltreemanager.lua"
+        }
+    ]
+}
