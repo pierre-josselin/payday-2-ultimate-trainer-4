@@ -183,11 +183,13 @@ function UT.Game.toggleDisableAI()
         for key, value in pairs(managers.enemy:all_enemies()) do
             value.unit:brain():set_active(true)
         end
-        for key, unit in pairs(managers.groupai:state():turrets()) do
-            unit:brain():set_active(true)
-        end
         for key, unit in pairs(SecurityCamera.cameras) do
             unit:base()._detection_interval = 0.1
+        end
+        if managers.groupai:state():turrets() then
+            for key, unit in pairs(managers.groupai:state():turrets()) do
+                unit:brain():set_active(true)
+            end
         end
         UT.showMessage("ai enabled", UT.colors.disabled)
         UT.Game.disableAI = false

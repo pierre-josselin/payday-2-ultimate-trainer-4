@@ -18,10 +18,12 @@ for key, value in pairs(managers.enemy:all_enemies()) do
     value.unit:brain():set_active(false)
 end
 
-for key, unit in pairs(managers.groupai:state():turrets()) do
-    unit:brain():set_active(false)
-end
-
 for key, unit in pairs(SecurityCamera.cameras) do
     unit:base()._detection_interval = 1000000
+end
+
+if managers.groupai:state():turrets() then
+    for key, unit in pairs(managers.groupai:state():turrets()) do
+        unit:brain():set_active(false)
+    end
 end
