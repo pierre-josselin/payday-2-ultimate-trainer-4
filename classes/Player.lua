@@ -141,6 +141,19 @@ function UT.Player.removeExclamationMarks()
     managers.savefile:save_progress()
 end
 
+function UT.Player.addContinentalCoins(value)
+	local current = Application:digest_value(managers.custom_safehouse._global.total)
+	Global.custom_safehouse_manager.total = Application:digest_value(current + value, true)
+    UT.showMessage("added " .. tostring(value) .. " continental coins", UT.colors.info)
+    managers.savefile:save_progress()
+end
+
+function UT.Player.resetContinentalCoins()
+	Global.custom_safehouse_manager.total = Application:digest_value(0, true)
+    UT.showMessage("continental coins reset", UT.colors.info)
+    managers.savefile:save_progress()
+end
+
 function UT.Player.unlockAllAchievments()
     for key, value in pairs(managers.achievment.achievments) do
         managers.achievment:award(key)

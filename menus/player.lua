@@ -98,6 +98,23 @@ function UT.menus.player()
                 }
             },
             {
+                text = "continental coins menu",
+                open_menu = {
+                    custom = true,
+                    title = "continental coins menu",
+                    button_list = {
+                        {text = "add 10 continental coins", callback_func = UT.Player.addContinentalCoins, callback_data = 10},
+                        {text = "add 50 continental coins", callback_func = UT.Player.addContinentalCoins, callback_data = 50},
+                        {text = "add 100 continental coins", callback_func = UT.Player.addContinentalCoins, callback_data = 100},
+                        {text = "add 500 continental coins", callback_func = UT.Player.addContinentalCoins, callback_data = 500},
+                        {text = "add 1000 continental coins", callback_func = UT.Player.addContinentalCoins, callback_data = 1000},
+                        {text = "reset continental coins", callback_func = UT.Player.resetContinentalCoins},
+                        {no_text = true, no_selection = true},
+                        {text = "close", cancel_button = true}
+                    }
+                }
+            },
+            {
                 text = "achievment menu",
                 open_menu = {
                     custom = true,
