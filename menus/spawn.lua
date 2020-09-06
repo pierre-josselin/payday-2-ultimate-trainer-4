@@ -9,11 +9,13 @@ function UT.menus.spawn()
             {text = "loots", callback_func = UT.Spawn.setModeLoots},
             {text = "equipments", callback_func = UT.Spawn.setModeEquipments},
             {text = "packages", callback_func = UT.Spawn.setModePackages},
+            {text = "bags", callback_func = UT.Spawn.setModeBags},
             {no_text = true, no_selection = true},
             {text = "remove npcs", callback_func = UT.Spawn.removeNPCs},
             {text = "remove loots", callback_func = UT.Spawn.removeLoots},
             {text = "remove equipments", callback_func = UT.Spawn.removeEquipments},
             {text = "remove packages", callback_func = UT.Spawn.removePackages},
+            {text = "remove bags", callback_func = UT.Spawn.removeBags},
             {text = "dispose corpses", callback_func = UT.Spawn.disposeCorpses},
             {no_text = true, no_selection = true},
             {

@@ -21,7 +21,7 @@ end
 local unit = crosshairRay.unit
 
 if unit:base()
-or UT.Tables.bags[unit:name():key()]
+or UT.Tables.bagsKeys[unit:name():key()]
 or UT.Tables.vehicles[unit:name():key()] then
     UT.showMessage("cannot copy this", UT.colors.error)
     do return end

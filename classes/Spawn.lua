@@ -74,6 +74,12 @@ function UT.Spawn.setModePackages()
     UT.Spawn.setMode("packages")
 end
 
+function UT.Spawn.setModeBags()
+    local message = "Your game may crash if another player pick up a bag that doesn't exist in this level."
+    managers.chat:_receive_message(1, "Ultimate Trainer", message, UT.colors.danger)
+    UT.Spawn.setMode("bags")
+end
+
 function UT.Spawn.spawnEnemy(id)
     local position = UT.Spawn.getPosition()
     if not position then return end
@@ -155,6 +161,13 @@ function UT.Spawn.spawnPackage(id)
     UT.spawnUnit(Idstring(id), position, rotation)
 end
 
+function UT.Spawn.spawnBag(name)
+    local position = UT.getCameraPosition()
+    local rotation = UT.getCameraRotation()
+    local forward = UT.getCameraForward()
+    managers.player:server_drop_carry(name, managers.money:get_bag_value(name), true, true, 1, position, rotation, forward, 100, nil, nil)
+end
+
 function UT.Spawn.removeNPCs()
     local units = {}
     for key, value in pairs(managers.enemy:all_civilians()) do
@@ -205,6 +218,18 @@ function UT.Spawn.removePackages()
     end
     local count = UT.removeUnits(units)
     UT.showMessage("removed " .. tostring(count) .. " package" .. (count > 1 and "s" or ""), UT.colors.info)
+end
+
+function UT.Spawn.removeBags()
+    local units = {}
+    for key, unit in pairs(managers.interaction._interactive_units) do
+        if not alive(unit) then goto continue end
+        if not UT.Tables.bagsKeys[unit:name():key()] then goto continue end
+        table.insert(units, unit)
+        ::continue::
+    end
+    local count = UT.removeUnits(units)
+    UT.showMessage("removed " .. tostring(count) .. " bag" .. (count > 1 and "s" or ""), UT.colors.info)
 end
 
 function UT.Spawn.disposeCorpses()

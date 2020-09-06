@@ -164,6 +164,25 @@ UT.Tables.packages = {
 }
 
 UT.Tables.bags = {
+    "money",
+    "gold",
+    "coke",
+    "sandwich",
+    "weapon",
+    "painting",
+    "diamonds",
+    "meth",
+    "lance_bag",
+    "ammo",
+    "parachute",
+    "goat",
+    "cloaker_cocaine",
+    "safe_wpn",
+    "safe_ovk",
+    "safe_secure_dummy",
+}
+
+UT.Tables.bagsKeys = {
     ["dd162740788712c8"] = true,
     ["853940b5f91847cf"] = true,
     ["14f05c3d9ebb44b6"] = true,

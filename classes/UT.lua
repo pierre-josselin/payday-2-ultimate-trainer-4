@@ -8,6 +8,7 @@ UT.colors = {
     info = Color("00ffff"),
     success = Color("00ff00"),
     warning = Color("ffff00"),
+    danger = Color("ff0000"),
     error = Color("ff0000"),
     enabled = Color("00ff00"),
     disabled = Color("ffa500")

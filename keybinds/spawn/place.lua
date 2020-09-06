@@ -15,6 +15,10 @@ if not Network:is_server() then
     do return end
 end
 
+if not alive(managers.player:player_unit()) then
+    do return end
+end
+
 if UT.Spawn.mode == "enemies" then
     UT.Spawn.spawnEnemy(UT.Tables.enemies[UT.Spawn.index])
 elseif UT.Spawn.mode == "allies" then
@@ -27,6 +31,8 @@ elseif UT.Spawn.mode == "equipments" then
     UT.Spawn.spawnEquipment(UT.Spawn.available.equipments[UT.Spawn.index])
 elseif UT.Spawn.mode == "packages" then
     UT.Spawn.spawnPackage(UT.Spawn.available.packages[UT.Spawn.index])
+elseif UT.Spawn.mode == "bags" then
+    UT.Spawn.spawnBag(UT.Tables.bags[UT.Spawn.index])
 else
     UT.showMessage("no mode selected", UT.colors.warning)
 end

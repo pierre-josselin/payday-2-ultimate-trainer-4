@@ -39,6 +39,10 @@ elseif UT.Spawn.mode == "packages" then
     if UT.Spawn.index == 1 then UT.Spawn.index = UT.countTable(UT.Spawn.available.packages)
     else UT.Spawn.index = UT.Spawn.index - 1 end
     UT.showSubtitle(UT.getFilename(UT.Spawn.available.packages[UT.Spawn.index]), UT.colors.info)
+elseif UT.Spawn.mode == "bags" then
+    if UT.Spawn.index == 1 then UT.Spawn.index = UT.countTable(UT.Tables.bags)
+    else UT.Spawn.index = UT.Spawn.index - 1 end
+    UT.showSubtitle(UT.Tables.bags[UT.Spawn.index], UT.colors.info)
 else
     UT.showMessage("no mode selected", UT.colors.warning)
 end
