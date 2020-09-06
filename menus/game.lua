@@ -30,6 +30,7 @@ function UT.menus.game()
             {text = "disable ai toggle", callback_func = UT.Game.toggleDisableAI, host = true},
             {text = "instant drilling toggle", callback_func = UT.Game.toggleInstantDrilling, host = true},
             {text = "prevent alarm triggering toggle", callback_func = UT.Game.togglePreventAlarmTriggering, host = true},
+            {text = "unlimited pagers toggle", callback_func = UT.Game.toggleUnlimitedPagers, host = true},
             {no_text = true, no_selection = true},
             {text = "close", cancel_button = true}
         }

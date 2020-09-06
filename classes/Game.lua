@@ -231,4 +231,16 @@ function UT.Game.togglePreventAlarmTriggering()
     end
 end
 
+function UT.Game.toggleUnlimitedPagers()
+    if not UT.Game.unlimitedPagers then
+        tweak_data.player.alarm_pager.bluff_success_chance = {1, 1, 1, 1, 1}
+        UT.showMessage("unlimited pagers enabled", UT.colors.enabled)
+        UT.Game.unlimitedPagers = true
+    else
+        tweak_data.player.alarm_pager.bluff_success_chance = {1, 1, 1, 1, 0}
+        UT.showMessage("unlimited pagers disabled", UT.colors.disabled)
+        UT.Game.unlimitedPagers = false
+    end
+end
+
 UTClassGame = true
