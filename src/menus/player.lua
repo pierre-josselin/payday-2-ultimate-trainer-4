@@ -20,6 +20,7 @@ function UT.menus.player()
                         {text = "set infamy rank xv", callback_func = UT.Player.setInfamyRank, callback_data = 15},
                         {text = "set infamy rank xx", callback_func = UT.Player.setInfamyRank, callback_data = 20},
                         {text = "set infamy rank xxv", callback_func = UT.Player.setInfamyRank, callback_data = 25},
+                        {text = "set infamy rank lxv", callback_func = UT.Player.setInfamyRank, callback_data = 65},
                         {text = "reset infamy rank", callback_func = UT.Player.setInfamyRank, callback_data = 0},
                         {no_text = true, no_selection = true},
                         {text = "add 1.000.000 xp", callback_func = UT.Player.addExperience, callback_data = 1000000},

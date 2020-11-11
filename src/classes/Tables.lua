@@ -346,6 +346,7 @@ UT.Tables.jobs = {
             {name = "heist_four_stores", job = "four_stores", level = "four_stores"},
             {name = "heist_jolly", job = "jolly", level = "jolly"},
             {name = "heist_cane", job = "cane", level = "cane"},
+            {name = "heist_fex", job = "fex", level = "fex"},
         }
     },
     {
