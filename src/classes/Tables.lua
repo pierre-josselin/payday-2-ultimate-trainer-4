@@ -152,7 +152,7 @@ UT.Tables.equipments = {
     ["a163786a6ddb0291"] = "body_bags_bag",
     ["40f36f66c018e700"] = "grenade_crate",
     ["6f84353aff254af4"] = "trip_mine",
-    --["b1f544e379409e6c"] = "sentry_gun",
+    ["b1f544e379409e6c"] = "sentry_gun",
 }
 
 UT.Tables.packages = {
