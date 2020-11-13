@@ -55,6 +55,9 @@ function UT.Game.toggleOverkillMode()
         _G.CloneClass(CoreEnvironmentControllerManager)
         _G.CloneClass(SawWeaponBase)
         _G.CloneClass(CopDamage)
+        if not tweak_data_carry_types then
+            tweak_data_carry_types = deep_clone(tweak_data.carry.types)
+        end
         function NewRaycastWeaponBase:recoil_multiplier() return 0 end
         function NewRaycastWeaponBase:spread_multiplier() return 0 end
         function NewRaycastWeaponBase:fire_rate_multiplier() return 1000000 end
@@ -98,6 +101,12 @@ function UT.Game.toggleOverkillMode()
             end
             return self.orig.damage_melee(self, attack_data)
         end
+        for type, value in pairs(tweak_data.carry.types) do
+            tweak_data.carry.types[type].move_speed_modifier = 1
+            tweak_data.carry.types[type].jump_modifier = 1
+            tweak_data.carry.types[type].can_run = true
+            tweak_data.carry.types[type].throw_distance_multiplier = 1
+        end
         UT.showMessage("overkill mode enabled", UT.colors.enabled)
         UT.Game.overkillMode = true
     else
@@ -123,6 +132,7 @@ function UT.Game.toggleOverkillMode()
         SawWeaponBase.fire = SawWeaponBase.orig.fire
         CopDamage.damage_bullet = CopDamage.orig.damage_bullet
         CopDamage.damage_melee = CopDamage.orig.damage_melee
+        tweak_data.carry.types = deep_clone(tweak_data_carry_types)
         UT.showMessage("overkill mode disabled", UT.colors.disabled)
         UT.Game.overkillMode = false
     end
