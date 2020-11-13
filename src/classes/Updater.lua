@@ -1,6 +1,6 @@
 UT.Updater = {}
 
-UT.Updater.filename = "Ultimate Trainer 4.1.3"
+UT.Updater.filename = "Ultimate Trainer 4.1.4"
 UT.Updater.username = "ChildOfSorrow"
 UT.Updater.requests = 6
 
