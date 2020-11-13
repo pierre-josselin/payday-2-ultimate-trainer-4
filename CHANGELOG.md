@@ -7,13 +7,13 @@
 - Convert all enemies to game menu
 - Remove bags weight to overkill mode
 - Interaction menu
-- Sentry gun spawn (strykerman)
+- Sentry gun spawn
 - Buluc's Mansion heist to job menu (NightWolf1038)
 - LXV infamy rank to player menu (NightWolf1038)
 
 ### Fixed
 
-- Sentry gun spawn crash
+- Sentry gun spawn crash (strykerman)
 - Broken/out of ammo sentry guns removal
 
 ## [4.1.2] - 2020-09-06
