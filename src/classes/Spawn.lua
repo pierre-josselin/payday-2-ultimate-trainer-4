@@ -190,7 +190,7 @@ end
 
 function UT.Spawn.removeEquipments()
     local units = {}
-    for key, unit in pairs(managers.interaction._interactive_units) do
+    for key, unit in pairs(World:find_units_quick("all")) do
         if not alive(unit) then goto continue end
         if not UT.Tables.equipments[unit:name():key()] then goto continue end
         table.insert(units, unit)
