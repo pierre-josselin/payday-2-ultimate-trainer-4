@@ -20,6 +20,30 @@ function UT.menus.game()
                     }
                 }
             },
+            {
+                text = "interaction menu",
+                open_menu = {
+                    custom = true,
+                    title = "interaction menu",
+                    button_list = {
+                        {text = "open doors", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.doors},
+                        {text = "open windows", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.windows},
+                        {text = "open deposit boxes", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.depositBoxes},
+                        {text = "open containers", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.containers},
+                        {text = "open crates", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.crates},
+                        {text = "open atms", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.atms},
+                        {text = "use keycards", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.keycards},
+                        {text = "hack computers", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.computers},
+                        {text = "place shaped charges", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.shapedCharges},
+                        {text = "place drills", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.drills},
+                        {text = "barricade windows", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.boards},
+                        {text = "pick up gage packages", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.packages},
+                        {text = "cut fences", callback_func = UT.Game.interact, callback_data = UT.Tables.interactions.fences},
+                        {no_text = true, no_selection = true},
+                        {text = "close", cancel_button = true}
+                    }
+                }
+            },
             {text = "access cameras", callback_func = UT.Game.accessCameras, close_button = true},
             {text = "remove invisible walls", callback_func = UT.Game.removeInvisibleWalls, host = true},
             {text = "convert all enemies", callback_func = UT.Game.convertAllEnemies, host = true},

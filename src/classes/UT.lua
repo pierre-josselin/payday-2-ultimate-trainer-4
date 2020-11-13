@@ -222,6 +222,16 @@ function UT.enableUnlimitedConversions()
     end
 end
 
+function UT.getInteractiveUnits()
+    local units = {}
+    for key, unit in pairs(managers.interaction._interactive_units) do
+        if not alive(unit) then goto continue end
+        table.insert(units, unit)
+        ::continue::
+    end
+    return units
+end
+
 function UT.documentation()
 	if not MenuCallbackHandler:is_overlay_enabled() then
 		managers.menu:show_enable_steam_overlay()

@@ -264,4 +264,32 @@ function UT.Game.convertAllEnemies()
     end
 end
 
+function UT.Game.interact(table)
+    if not UT.Game.overkillMode then
+        _G.CloneClass(BaseInteractionExt)
+        _G.CloneClass(PlayerManager)
+        function BaseInteractionExt:_has_required_upgrade() return true end
+        function BaseInteractionExt:_has_required_deployable() return true end
+        function BaseInteractionExt:can_interact() return true end
+        function PlayerManager:remove_equipment() end
+    end
+    local count = 0
+    local units = UT.getInteractiveUnits()
+    local playerUnit = managers.player:player_unit()
+    for key, unit in pairs(units) do
+        local key = unit:name():key()
+        if UT.inTable(key, table) then
+            unit:interaction():interact(playerUnit)
+            count = count + 1
+        end
+    end
+    UT.showMessage("interacted with " .. tostring(count) .. " unit" .. (count > 1 and "s" or ""), UT.colors.info)
+    if not UT.Game.overkillMode then
+        BaseInteractionExt._has_required_upgrade = BaseInteractionExt.orig._has_required_upgrade
+        BaseInteractionExt._has_required_deployable = BaseInteractionExt.orig._has_required_deployable
+        BaseInteractionExt.can_interact = BaseInteractionExt.orig.can_interact
+        PlayerManager.remove_equipment = PlayerManager.orig.remove_equipment
+    end
+end
+
 UTClassGame = true
