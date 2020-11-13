@@ -209,6 +209,19 @@ function UT.teleportation(position, rotation)
     managers.player:warp_to(position, rotation)
 end
 
+function UT.enableUnlimitedConversions()
+    _G.CloneClass(PlayerManager)
+    function PlayerManager:upgrade_value(category, upgrade, default)
+        if category == "player" and upgrade == "convert_enemies" then
+            return true
+        elseif category == "player" and upgrade == "convert_enemies_max_minions" then
+            return 1000000
+        else
+            return PlayerManager.orig.upgrade_value(self, category, upgrade, default)
+        end
+    end
+end
+
 function UT.documentation()
 	if not MenuCallbackHandler:is_overlay_enabled() then
 		managers.menu:show_enable_steam_overlay()

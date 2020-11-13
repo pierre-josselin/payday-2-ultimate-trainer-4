@@ -243,4 +243,15 @@ function UT.Game.toggleUnlimitedPagers()
     end
 end
 
+function UT.Game.convertAllEnemies()
+    UT.enableUnlimitedConversions()
+    for key, value in pairs(managers.enemy:all_enemies()) do
+        if not alive(value.unit) then goto continue end
+        managers.groupai:state():convert_hostage_to_criminal(value.unit)
+        managers.groupai:state():sync_converted_enemy(value.unit)
+        value.unit:contour():add("friendly", true)
+        ::continue::
+    end
+end
+
 UTClassGame = true

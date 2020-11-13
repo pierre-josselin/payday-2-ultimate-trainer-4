@@ -14,16 +14,7 @@ function UT.Spawn.setModeEnemies()
 end
 
 function UT.Spawn.setModeAllies()
-    _G.CloneClass(PlayerManager)
-    function PlayerManager:upgrade_value(category, upgrade, default)
-        if category == "player" and upgrade == "convert_enemies" then
-            return true
-        elseif category == "player" and upgrade == "convert_enemies_max_minions" then
-            return 1000000
-        else
-            return PlayerManager.orig.upgrade_value(self, category, upgrade, default)
-        end
-    end
+    UT.enableUnlimitedConversions()
     UT.Spawn.setMode("allies")
 end
 

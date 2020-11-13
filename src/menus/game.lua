@@ -22,6 +22,7 @@ function UT.menus.game()
             },
             {text = "access cameras", callback_func = UT.Game.accessCameras, close_button = true},
             {text = "remove invisible walls", callback_func = UT.Game.removeInvisibleWalls, host = true},
+            {text = "convert all enemies", callback_func = UT.Game.convertAllEnemies, host = true},
             {text = "trigger the alarm", callback_func = UT.Game.triggerAlarm, host = true},
             {no_text = true, no_selection = true},
             {text = "god mode toggle", callback_func = UT.Game.toggleGodMode},
