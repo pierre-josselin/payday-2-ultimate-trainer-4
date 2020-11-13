@@ -66,7 +66,7 @@ function UT.Spawn.setModePackages()
 end
 
 function UT.Spawn.setModeBags()
-    local message = "Your game may crash if another player pick up a bag that doesn't exist in this level."
+    local message = "Your game may crash by spawning a bag that doesn't exist in this level."
     managers.chat:_receive_message(1, "Ultimate Trainer", message, UT.colors.danger)
     UT.Spawn.setMode("bags")
 end
