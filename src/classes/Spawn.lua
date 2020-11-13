@@ -141,6 +141,7 @@ function UT.Spawn.spawnEquipment(name)
         local playerUnit = managers.player:player_unit()
         local unit = SentryGunBase.spawn(playerUnit, position, rotation)
         if not unit then return end
+        unit:base():post_setup(1)
         managers.network:session():send_to_peers_synched("from_server_sentry_gun_place_result", 1, 0, unit, 2, 2, true, 2)
     end
 end
