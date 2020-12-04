@@ -322,10 +322,6 @@
             "script_path" : "hooks/gamesetup.lua"
         },
         {
-            "hook_id" : "lib/states/ingamewaitingforplayers",
-            "script_path" : "hooks/ingamewaitingforplayers.lua"
-        },
-        {
             "hook_id" : "lib/network/base/networkmanager",
             "script_path" : "hooks/networkmanager.lua"
         },

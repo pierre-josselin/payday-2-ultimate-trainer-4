@@ -34,14 +34,14 @@ end
 
 function UT.Game.toggleGodMode()
     local characterDamage = managers.player:player_unit():character_damage()
-    if UT.Game.godMode then
+    if Global.god_mode then
         characterDamage:set_god_mode(false)
         UT.showMessage("god mode disabled", UT.colors.disabled)
-        UT.Game.godMode = false
+        Global.god_mode = false
     else
         characterDamage:set_god_mode(true)
         UT.showMessage("god mode enabled", UT.colors.enabled)
-        UT.Game.godMode = true
+        Global.god_mode = true
     end
 end
 
