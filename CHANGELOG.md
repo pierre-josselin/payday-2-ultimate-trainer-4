@@ -6,6 +6,10 @@
 
 - Player menu issues ([#4])
 
+### Removed
+
+- Set infamy points
+
 ## [4.1.3] - 2020-11-13
 
 ### Added
