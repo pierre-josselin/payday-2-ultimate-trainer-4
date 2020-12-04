@@ -1,5 +1,7 @@
 # Changelog
 
+## [4.1.4]
+
 ## [4.1.3] - 2020-11-13
 
 ### Added
@@ -29,5 +31,6 @@
 
 - Crash with "disable ai"
 
+[4.1.4]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.4
 [4.1.3]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.3
 [4.1.2]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.2

@@ -3,7 +3,7 @@
     "description": "Ultimate Trainer 4",
     "author": "ChildOfSorrow",
 	"contact": "ChildOfSorrow",
-    "version": "4.1.3",
+    "version": "4.1.4",
     "blt_version": 2,
     "color": "255 0 0",
 	"image" : "logo.png",

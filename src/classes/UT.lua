@@ -1,7 +1,7 @@
 UT = {}
 
 UT.menus = {}
-UT.version = "4.1.3"
+UT.version = "4.1.4"
 UT.url = "https://www.unknowncheats.me/forum/payday-2-a/390014-payday-2-ultimate-trainer-4-a.html"
 UT.colors = {
     white = Color("ffffff"),
