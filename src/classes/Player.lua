@@ -43,12 +43,6 @@ function UT.Player.addPerkPoints(value)
     UT.Player.saveAndRefresh()
 end
 
-function UT.Player.setInfamyPoints(value)
-    managers.infamy:_set_points(value)
-    UT.showMessage("set infamy points to " .. tostring(value), UT.colors.info)
-    UT.Player.saveAndRefresh()
-end
-
 function UT.Player.addMoney(value)
     managers.money:_add_to_total(value)
     UT.showMessage("added " .. tostring(value) .. " $", UT.colors.info)

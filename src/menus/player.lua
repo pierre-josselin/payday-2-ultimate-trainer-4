@@ -43,9 +43,6 @@ function UT.menus.player()
                         {text = "add 13700 perk points", callback_func = UT.Player.addPerkPoints, callback_data = 13700},
                         {text = "add 287700 perk points", callback_func = UT.Player.addPerkPoints, callback_data = 287700},
                         {no_text = true, no_selection = true},
-                        {text = "set infamy points to 25", callback_func = UT.Player.setInfamyPoints, callback_data = 25},
-                        {text = "reset infamy points", callback_func = UT.Player.setInfamyPoints, callback_data = 0},
-                        {no_text = true, no_selection = true},
                         {text = "close", cancel_button = true}
                     }
                 }
