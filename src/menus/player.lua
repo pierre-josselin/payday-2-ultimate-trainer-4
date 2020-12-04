@@ -115,13 +115,13 @@ function UT.menus.player()
                 }
             },
             {
-                text = "achievment menu",
+                text = "achievement menu",
                 open_menu = {
                     custom = true,
-                    title = "achievment menu",
+                    title = "achievement menu",
                     button_list = {
-                        {text = "unlock all steam achievments", callback_func = UT.Player.unlockAllAchievments},
-                        {text = "lock all steam achievments", callback_func = UT.Player.lockAllAchievments},
+                        {text = "unlock all steam achievements", callback_func = UT.Player.unlockAllAchievments},
+                        {text = "lock all steam achievements", callback_func = UT.Player.lockAllAchievments},
                         {no_text = true, no_selection = true},
                         {text = "close", cancel_button = true}
                     }

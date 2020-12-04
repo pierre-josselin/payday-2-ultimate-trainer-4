@@ -148,12 +148,12 @@ function UT.Player.unlockAllAchievments()
     for key, value in pairs(managers.achievment.achievments) do
         managers.achievment:award(key)
     end
-    UT.showMessage("unlocked all steam achievments", UT.colors.info)
+    UT.showMessage("unlocked all steam achievements", UT.colors.info)
 end
 
 function UT.Player.lockAllAchievments()
     managers.achievment:clear_all_steam()
-    UT.showMessage("locked all steam achievments", UT.colors.info)
+    UT.showMessage("locked all steam achievements", UT.colors.info)
 end
 
 function UT.Player.saveAndRefresh()
