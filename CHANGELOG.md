@@ -8,8 +8,8 @@
 
 ### Fixed
 
-- Joining an heist with not owned DLC content crash ([#3])
-- Player menu issues ([#4])
+- Joining an heist with not owned DLC content crash (#3)
+- Player menu issues (#4)
 
 ### Removed
 
@@ -47,6 +47,3 @@
 [4.1.4]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.4
 [4.1.3]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.3
 [4.1.2]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.2
-
-[#3]: https://github.com/pierre-josselin/ultimate-trainer/issues/3
-[#4]: https://github.com/pierre-josselin/ultimate-trainer/issues/4
