@@ -2,6 +2,10 @@
 
 ## [4.1.4]
 
+### Added
+
+- C and D infamy ranks
+
 ### Fixed
 
 - Player menu issues ([#4])
