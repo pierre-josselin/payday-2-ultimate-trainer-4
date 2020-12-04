@@ -2,6 +2,10 @@
 
 ## [4.1.4]
 
+### Fixed
+
+- Player menu issues ([#4])
+
 ## [4.1.3] - 2020-11-13
 
 ### Added
@@ -34,3 +38,5 @@
 [4.1.4]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.4
 [4.1.3]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.3
 [4.1.2]: https://github.com/pierre-josselin/ultimate-trainer/releases/tag/4.1.2
+
+[#4]: https://github.com/pierre-josselin/ultimate-trainer/issues/4

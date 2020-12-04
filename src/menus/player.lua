@@ -36,8 +36,8 @@ function UT.menus.player()
                     custom = true,
                     title = "skill menu",
                     button_list = {
-                        {text = "set skill points to 120", callback_func = UT.Player.setSkillPoints, callback_data = 120},
-                        {text = "set skill points to 690", callback_func = UT.Player.setSkillPoints, callback_data = 690},
+                        {text = "set total skill points to 120", callback_func = UT.Player.setSkillPoints, callback_data = 120},
+                        {text = "set total skill points to 690", callback_func = UT.Player.setSkillPoints, callback_data = 690},
                         {text = "reset skill points hack", callback_func = UT.Player.resetSkillPoints},
                         {no_text = true, no_selection = true},
                         {text = "add 13700 perk points", callback_func = UT.Player.addPerkPoints, callback_data = 13700},
