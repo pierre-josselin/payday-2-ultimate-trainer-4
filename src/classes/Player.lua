@@ -1,8 +1,10 @@
 UT.Player = {}
 
 function UT.Player.setLevel(value)
+    local rank = managers.experience:current_rank()
     managers.experience:reset()
     managers.experience:_set_current_level(value)
+    managers.experience:set_current_rank(rank)
     UT.showMessage("level set to " .. tostring(value), UT.colors.info)
     UT.showMessage(UT.messages.restartGame, UT.colors.info)
     UT.Player.saveAndRefresh()
