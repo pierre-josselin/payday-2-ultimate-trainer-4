@@ -1,8 +1,6 @@
 # PAYDAY 2 - Ultimate Trainer 4
 One of the most popular hack for PAYDAY 2.
 
-<img src="https://i.imgur.com/XJsGIYl.png" width="600">
-
 **[Download](https://www.unknowncheats.me/forum/payday-2-a/390014-payday-2-ultimate-trainer-4-a.html)**<br>
 [Questions & Answers](https://www.unknowncheats.me/forum/payday-2-a/429405-payday-2-ultimate-trainer-4-a.html)
 
@@ -42,7 +40,3 @@ One of the most popular hack for PAYDAY 2.
 | HOME               | Restart instantly the game.     |
 | END                | Finish instantly the game.      |
 | DELETE             | Leave instantly the game.       |
-
-<img src="https://i.imgur.com/qU5DK3Z.png" width="800">
-
-<img src="https://i.imgur.com/Cr0Yrj9.png" width="800">
